@@ -1,0 +1,24 @@
+{
+  "name": "carlessanzmateu.github.io",
+  "version": "0.0.0",
+  "description": "My portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "carles",
+    "sanz",
+    "mateu",
+    "portfolio",
+    "full",
+    "stack",
+    "developer"
+  ],
+  "author": "@carlessanzmateu",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2"
+  }
+}

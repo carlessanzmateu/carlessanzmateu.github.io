@@ -1,0 +1,9 @@
+#main-header-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0033cc;
+  background-image: url("../../assets/optim-images/header-min.jpg");
+  background-size: cover; }
+  #main-header-container h1 {
+    text-align: center;
+    color: #FFF; }

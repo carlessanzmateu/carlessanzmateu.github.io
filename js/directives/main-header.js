@@ -7,7 +7,7 @@
   function mainHeader() {
     return {
       restrict: 'E',
-      template: '<h1>Currently on Development :P</h1>',
+      templateUrl: '../../components/main-header.html',
     };
   }
 })();

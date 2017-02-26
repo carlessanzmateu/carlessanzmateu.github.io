@@ -23,6 +23,10 @@ gulp.task('default', () => {
   gulp
     .src('./node_modules/angular-material/angular-material.js')
     .pipe(gulp.dest('./js/vendor/'));
+
+  gulp
+    .src('./node_modules/angular-material/angular-material.min.css')
+    .pipe(gulp.dest('./css/libraries/'));
 });
 
 gulp.task('sass', () => {

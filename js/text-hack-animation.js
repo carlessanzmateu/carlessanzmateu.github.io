@@ -1,27 +1,30 @@
 (function() {
-
-  window.onload = function() {
-    //var textsToAnimate = document.getElementsByClassName('hackAnimation');
-
-    /*for(var i = 0; i < textsToAnimate.length; i++) {
-      individualText = textsToAnimate[i].textContent;
-      lettersToChange = getRandomArbitrary(1,individualText.length);
-    }*/
-
-
-
-  }
-})();
-
-(function() {
   'use strict';
 
-  var HACKEDCHARSMAP = ['A','$','#','/','¿','¬','«','µ','Æ'];
-  var hackAnimation = {
-    hackIdAnimation: hackId,
-    hackClassAnimation: hackClass,
+  var HACKEDCHARSMAP = ['A','$','♡','#','/','¿','¬','«','µ','Æ','ゃ','♞','✿','♩','☑'];
+  var hackHelper = {
+    checkIsArrayOfElements: isArray,
+    randomIntegerNumber: getRandomIntegerNumber,
   };
-  window.hackAnimation = hackAnimation;
+  window.hackAnimation = hackAnimation || {};
+
+
+  function hackAnimation(settings) {
+    if(!settings) {
+      console.error('Hack Animation needs some settings as object to perform animation');
+      console.error('------------------------- EXAMPLE -------------------------------');
+      console.error('hackAnimation({ \n id:"someId", \n class:"someClass" \n});');
+      return;
+    }
+
+    if(settings['id']) {
+      console.log(settings.id);
+    }
+
+    if(settings['class']) {
+      hackClass(settings.class);
+    }
+  }
 
   function hackId(id) {
     var idElementToHack = document.getElementById(id);
@@ -35,11 +38,22 @@
   }
 
   function hackClass(selectedDOMClass) {
+    hackHelper.checkIsArrayOfElements(selectedDOMClass);
+
     var classElementsToHack = document.getElementsByClassName(selectedDOMClass);
-    console.log(classElementsToHack);
   }
 
   function getRandomIntegerNumber(min, max) {
     return parseInt(Math.random() * (max - min) + min);
+  }
+
+  function isArray(data) {
+    var isArray = false;
+
+    if (data.constructor === Array) {
+      isArray = true;
+    }
+
+    return isArray;
   }
 })();

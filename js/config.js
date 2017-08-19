@@ -8,7 +8,7 @@
       templateUrl: 'views/main.html',
       //controller: 'MainCtrl',
     })
-    .when('/blog', {
+    .when('/blog/', {
       templateUrl: 'blog/index.html'
     })
     .otherwise({

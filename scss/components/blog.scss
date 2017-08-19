@@ -1,0 +1,41 @@
+.blog-advise {
+  width: 210px;
+  height: 115px;
+
+  top: 45%;
+  right: -14%;
+
+  position: fixed;
+
+  border-radius: 7px;
+  
+  background: #8884FF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#8884FF, #73FBD3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#8884FF, #73FBD3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#8884FF, #73FBD3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#8884FF, #73FBD3); /* Standard syntax (must be last) */
+
+  -webkit-transition: right .5s;
+  -moz-transition: right .5s;
+  -o-transition: right .5s;
+  transition: right .5s;
+  
+  h3, p {
+    text-align: center;
+    
+    color: #81717A;
+  }
+
+  &:hover {
+    right: -1%;
+  }
+
+}
+/*
+PALETA DE COLORES
+#81717A
+#8884FF
+#73FBD3
+#44E5E7
+#59D2FE
+*/

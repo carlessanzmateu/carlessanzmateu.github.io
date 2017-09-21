@@ -1,8 +1,17 @@
+body {
+  margin: 0px; }
+
+h1, h2 {
+  margin: 0px;
+  font-family: 'Playfair Display', serif; }
+
+p {
+  font-family: 'Raleway', sans-serif; }
+
 #main-header-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   height: 100vh;
   background-color: #0033cc;
   background-image: url("../../assets/optim-images/header-min.jpg");

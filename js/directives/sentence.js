@@ -8,6 +8,8 @@
     return {
       restrict: 'E',
       templateUrl: '../../components/sentence.html',
+      controller: 'sentenceController',
+      controllerAs: '$ctrl'
     };
   }
 })();

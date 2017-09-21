@@ -6,14 +6,20 @@
 
     function sentenceController() {
       var vm = this;
-      vm.foo = function(e) {
+      vm.moveText = function(e) {
         var x = -(e.clientX/10);
         var y = -(e.clientY/10);
 
-        console.log(x);
+        console.log(x , 'x');
+        console.log(y, 'y');
 
-        document.getElementById('sentence-text').style.marginTop = y + 'px ';
-        document.getElementById('sentence-text').style.marginLeft = x + 'px ';
+        document.getElementById('sentence-text').style.marginTop = y * .5 + 'px ';
+        document.getElementById('sentence-text').style.marginLeft = x * .1 + 'px ';
+      }
+
+      vm.resetAnimation = function() {
+        document.getElementById('sentence-text').style.marginTop = 0 + 'px ';
+        document.getElementById('sentence-text').style.marginLeft = 0 + 'px ';
       }
       // vm.onLoad = function() {
       //   // onmousemove es el evento que detecta cada movimiento

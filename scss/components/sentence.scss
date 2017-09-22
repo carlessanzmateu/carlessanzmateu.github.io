@@ -1,0 +1,19 @@
+@import '../variables.scss';
+@import '../global.scss';
+
+#sentence-container {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+
+  height: 20vh;
+
+  background-color: $primary-background;
+
+  h2 {
+    color: #FFF;
+    font-size: 1.55rem;
+    text-align: center;
+  }
+}

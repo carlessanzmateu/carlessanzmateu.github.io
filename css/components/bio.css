@@ -1,0 +1,26 @@
+body {
+  margin: 0px; }
+
+h1, h2 {
+  margin: 0px;
+  font-family: 'Playfair Display', serif; }
+
+p {
+  font-family: 'Raleway', sans-serif; }
+
+#bio-main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #373F51; }
+  #bio-main-container div#bio-content-container {
+    height: 80%;
+    width: 80%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black; }
+    #bio-main-container div#bio-content-container #bio-text-container {
+      width: 40%; }

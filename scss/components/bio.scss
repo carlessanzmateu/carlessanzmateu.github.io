@@ -1,0 +1,29 @@
+@import '../global.scss';
+@import '../variables.scss';
+
+#bio-main-container {
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: $primary-dark;
+
+  div#bio-content-container {
+    height: 80%;
+    width: 80%;
+    max-width: 1024px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 1px solid black;
+
+    #bio-text-container{
+      width: 40%;
+    }
+  }
+}

@@ -9,7 +9,7 @@ p {
   font-family: 'Raleway', sans-serif; }
 
 #bio-main-container {
-  height: 100vh;
+  height: 725px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,20 @@ p {
     max-width: 1024px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    border: 1px solid black; }
+    justify-content: space-evenly; }
+    #bio-main-container div#bio-content-container #border {
+      height: 46%;
+      width: 44%;
+      position: absolute;
+      margin-left: 6%;
+      border: 6px solid #545A5D; }
     #bio-main-container div#bio-content-container #bio-text-container {
       width: 40%; }
+      #bio-main-container div#bio-content-container #bio-text-container h3#bio-title {
+        font-size: 3rem;
+        color: #E8E9EB;
+        margin-left: -58%;
+        background-color: #008DD5; }
+      #bio-main-container div#bio-content-container #bio-text-container #bio-description {
+        color: #E0DFD5;
+        position: relative; }

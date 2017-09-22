@@ -12,9 +12,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30vh;
+  height: 20vh;
   background-color: #313638; }
   #sentence-container h2 {
     color: #FFF;
-    font-size: 2.5rem;
+    font-size: 1.55rem;
     text-align: center; }

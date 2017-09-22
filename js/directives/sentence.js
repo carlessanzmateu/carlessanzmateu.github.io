@@ -7,9 +7,7 @@
   function sentence() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/sentence.html',
-      controller: 'sentenceController',
-      controllerAs: '$ctrl'
+      templateUrl: '../../components/sentence.html'
     };
   }
 })();

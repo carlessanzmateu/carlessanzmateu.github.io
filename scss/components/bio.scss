@@ -1,0 +1,52 @@
+@import '../global.scss';
+@import '../variables.scss';
+
+#bio-main-container {
+  height: 725px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: $primary-dark;
+
+  div#bio-content-container {
+    height: 80%;
+    width: 80%;
+    max-width: 1024px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    #border {
+      height: 46%;
+      width: 44%;
+
+      position: absolute;
+
+      margin-left: 6%;
+
+      border: 6px solid $secondary-dark;
+    }
+
+    #bio-text-container{
+      width: 40%;
+
+      h3#bio-title {
+        font-size: 3rem;
+        color: $primary-light-color;
+
+        margin-left: -58%;
+
+        background-color: $alternative-light-color;
+      }
+
+      #bio-description {
+        color: $secondary-light-color;
+        position: relative;
+      }
+    }
+  }
+}

@@ -21,14 +21,31 @@
     justify-content: space-evenly;
 
     #border {
-      height: 46%;
-      width: 44%;
+      height: 488px;
+      width: 884px;
 
       position: absolute;
 
-      margin-left: 6%;
+      margin-left: 4%;
 
       border: 6px solid $secondary-dark;
+
+      @media screen and ( max-width: 1440px ) {
+        width: 825px;
+        margin-left: 5%;
+      }
+
+      @media screen and ( max-width: 1200px ) {
+        height: 493px;
+        width: 777px;
+  
+        margin-left: 6%;
+      }
+
+      @media screen and ( max-width: 1024px ) {
+        width: 690px;
+        margin-left: 7%;
+      }
     }
 
     #bio-text-container{
@@ -41,6 +58,14 @@
         margin-left: -58%;
 
         background-color: $alternative-light-color;
+
+        @media screen and ( max-width: 1197px ){
+          margin-left: -68%;
+        }
+
+        @media screen and ( max-width: 1024px ){
+          font-size: 2.7rem;
+        }
       }
 
       #bio-description {
@@ -50,3 +75,4 @@
     }
   }
 }
+

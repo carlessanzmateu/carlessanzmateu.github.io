@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow: 
+
+Sitemap: https://carlessanzmateu.github.io/sitemap.xml

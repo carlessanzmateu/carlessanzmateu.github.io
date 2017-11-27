@@ -1,0 +1,17 @@
+@import '../global.scss';
+@import '../variables.scss';
+
+.footer-main-container {
+  height: 100px;
+  background-color: $secondary-dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  a {
+    i {
+      font-size: 50px;
+      color: #FFF;
+    }
+  }
+}

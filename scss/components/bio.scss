@@ -11,7 +11,7 @@
 
   background-color: $primary-dark;
 
-  div#bio-content-container {
+  #bio-content-container {
     height: 80%;
     width: 80%;
     max-width: 1024px;
@@ -21,8 +21,8 @@
     justify-content: space-evenly;
 
     #border {
-      height: 488px;
-      width: 884px;
+      height: 57%;
+      width: 35%;
 
       position: absolute;
 
@@ -31,25 +31,48 @@
       border: 6px solid $secondary-dark;
 
       @media screen and ( max-width: 1440px ) {
-        width: 825px;
-        margin-left: 5%;
-      }
-
-      @media screen and ( max-width: 1200px ) {
-        height: 493px;
-        width: 777px;
-  
-        margin-left: 6%;
+        width: 58%;
+        height: 77%;
       }
 
       @media screen and ( max-width: 1024px ) {
-        width: 690px;
-        margin-left: 7%;
+        width: 70%;
+      }
+
+      @media screen and ( max-width: 768px ) {
+        height: 63%;
+      }
+
+      @media screen and ( max-width: 425px ) {
+        height: 50%;
+        border: 3px solid $secondary-dark;
+      }
+
+      @media screen and ( max-width: 320px ) {
+        height: 56%;
+      }
+    }
+
+    #picture {
+      @media screen and ( max-width: 768px ) {
+        height: 335px;
+      }
+
+      @media screen and ( max-width: 425px ) {
+        height: 165px;
+      }
+
+      @media screen and ( max-width: 375px ) {
+        height: 135px;
       }
     }
 
     #bio-text-container{
       width: 40%;
+
+      @media screen and ( max-width: 425px ) {
+        margin-top: -8%;
+      }
 
       h3#bio-title {
         font-size: 3rem;
@@ -64,13 +87,30 @@
         }
 
         @media screen and ( max-width: 1024px ){
-          font-size: 2.7rem;
+          font-size: 2.3rem;
+        }
+
+        @media screen and ( max-width: 768px ) {
+          font-size: 1.7rem;
+        }
+
+        @media screen and ( max-width: 425px ) {
+          font-size: .95rem;
+        }
+
+        @media screen and ( max-width: 375px ) {
+          font-size: .85rem;
+          position: relative;
         }
       }
 
       #bio-description {
         color: $secondary-light-color;
         position: relative;
+
+        @media screen and ( max-width: 425px ) {
+          font-size: 11px;
+        }
       }
     }
   }

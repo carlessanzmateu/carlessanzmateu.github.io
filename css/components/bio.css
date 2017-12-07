@@ -27,6 +27,10 @@ p {
       position: absolute;
       margin-left: 4%;
       border: 6px solid #545A5D; }
+      @media screen and (max-width: 1920px) {
+        #bio-main-container #bio-content-container #border {
+          height: 70%;
+          width: 42%; } }
       @media screen and (max-width: 1440px) {
         #bio-main-container #bio-content-container #border {
           width: 58%;
@@ -59,6 +63,7 @@ p {
         #bio-main-container #bio-content-container #bio-text-container {
           margin-top: -8%; } }
       #bio-main-container #bio-content-container #bio-text-container h3#bio-title {
+        position: relative;
         font-size: 3rem;
         color: #E8E9EB;
         margin-left: -74%;
@@ -77,8 +82,7 @@ p {
             font-size: .95rem; } }
         @media screen and (max-width: 375px) {
           #bio-main-container #bio-content-container #bio-text-container h3#bio-title {
-            font-size: .85rem;
-            position: relative; } }
+            font-size: .85rem; } }
       #bio-main-container #bio-content-container #bio-text-container #bio-description {
         color: #E0DFD5;
         position: relative; }

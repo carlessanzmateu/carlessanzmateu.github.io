@@ -2,12 +2,12 @@
   'use strict';
   
   angular.module('carlessanzmateuPortfolio')
-  .directive('blog', blog);
+  .directive('mainHeader', mainHeader);
 
-  function blog() {
+  function mainHeader() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/blog.html',
+      templateUrl: '../components/main-header/main-header.html',
     };
   }
 })();

@@ -7,7 +7,7 @@
   function footer() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/footer.html',
+      templateUrl: '../components/footer/footer.html',
     };
   }
 })();

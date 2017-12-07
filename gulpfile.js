@@ -6,7 +6,7 @@ const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 
-gulp.task('default',['moveVendor','min-css','concat-js'], () => {});
+gulp.task('default',['moveVendor','sass','min-css','concat-js'], () => {});
 
 gulp.task('moveVendor', () => {
   gulp
@@ -20,7 +20,7 @@ gulp.task('moveVendor', () => {
 
 gulp.task('sass', () => {
   gulp
-    .src('./scss/**/*.scss')
+    .src(['./scss/**/*.scss','./components/**/*.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'));
 });
@@ -38,7 +38,7 @@ gulp.task('min-css', () => {
 });
 
 gulp.task('concat-js', () => {
-  gulp.src(['./js/app.js', './js/config.js', './js/directives/*.js'])
+  gulp.src(['./js/app.js', './js/config.js', './components/**/*.js'])
     .pipe(concat('concat.js'))
     .pipe(gulp.dest('./dist'));
 });

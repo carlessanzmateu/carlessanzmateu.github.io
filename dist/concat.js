@@ -35,21 +35,7 @@
   function bio() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/bio.html',
-    };
-  }
-})();
-
-(function () {
-  'use strict';
-  
-  angular.module('carlessanzmateuPortfolio')
-  .directive('blog', blog);
-
-  function blog() {
-    return {
-      restrict: 'E',
-      templateUrl: '../../components/blog.html',
+      templateUrl: '../components/bio/bio.html',
     };
   }
 })();
@@ -63,7 +49,21 @@
   function footer() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/footer.html',
+      templateUrl: '../components/footer/footer.html',
+    };
+  }
+})();
+
+(function () {
+  'use strict';
+  
+  angular.module('carlessanzmateuPortfolio')
+  .directive('blog', blog);
+
+  function blog() {
+    return {
+      restrict: 'E',
+      templateUrl: 'blog.html',
     };
   }
 })();
@@ -77,7 +77,7 @@
   function mainHeader() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/main-header.html',
+      templateUrl: '../components/main-header/main-header.html',
     };
   }
 })();
@@ -91,7 +91,7 @@
   function sentence() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/sentence.html'
+      templateUrl: '../components/sentence/sentence.html'
     };
   }
 })();

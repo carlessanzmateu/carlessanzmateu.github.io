@@ -2,12 +2,12 @@
   'use strict';
   
   angular.module('carlessanzmateuPortfolio')
-  .directive('sentence', sentence);
+  .directive('bio', bio);
 
-  function sentence() {
+  function bio() {
     return {
       restrict: 'E',
-      templateUrl: '../../components/sentence.html'
+      templateUrl: '../components/bio/bio.html',
     };
   }
 })();

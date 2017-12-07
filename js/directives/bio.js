@@ -1,6 +1,6 @@
-'use strict';
-
 (function () {
+  'use strict';
+  
   angular.module('carlessanzmateuPortfolio')
   .directive('bio', bio);
 

@@ -44,12 +44,12 @@
   'use strict';
   
   angular.module('carlessanzmateuPortfolio')
-  .directive('footerMain', footer);
+  .directive('blog', blog);
 
-  function footer() {
+  function blog() {
     return {
       restrict: 'E',
-      templateUrl: '../components/footer/footer.html',
+      templateUrl: 'blog.html',
     };
   }
 })();
@@ -58,12 +58,12 @@
   'use strict';
   
   angular.module('carlessanzmateuPortfolio')
-  .directive('blog', blog);
+  .directive('footerMain', footer);
 
-  function blog() {
+  function footer() {
     return {
       restrict: 'E',
-      templateUrl: 'blog.html',
+      templateUrl: '../components/footer/footer.html',
     };
   }
 })();

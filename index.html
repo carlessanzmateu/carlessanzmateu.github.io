@@ -1,63 +1,328 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <base href="/">
+  <head>
 
-  <title>Carles Sanz Mateu</title>
-  <meta name="viewport" content="initial-scale=1.0">
-  <meta name="description" content="Carles Sanz Mateu  | Bievenido a mi página personal, espero que encuentres lo que buscas y dejes un poco de tí">
-  <meta name="author" content="Carles Sanz Mateu">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Carles Sanz Mateu  | Bievenido a mi página personal, espero que encuentres lo que buscas y dejes un poco de tí">
+    <meta name="author" content="Carles Sanz Mateu">
+
+    <title>Carles Sanz Mateu</title>
+
     <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@magic15awesome">
-  <meta name="twitter:title" content="Carles Sanz Mateu">
-  <meta name="twitter:description" content="Carles Sanz Mateu  | Bievenido a mi página personal">
-  <meta name="twitter:creator" content="@magic15awesome">
-  <!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
-  <meta name="twitter:image" content="https://carlessanzmateu.github.io/assets/optim-images/header-min.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@carlessanzmateu">
+    <meta name="twitter:title" content="Carles Sanz Mateu">
+    <meta name="twitter:description" content="Carles Sanz Mateu  | Bievenido a mi página personal">
+    <meta name="twitter:creator" content="@carlessanzmateu">
+    <!-- Twitter summary card with large image. Al menos estas medidas 280x150px -->
+    <meta name="twitter:image" content="https://carlessanzmateu.github.io/assets/optim-images/header-min.jpg">
 
-  <!-- Open Graph data -->
-  <meta property="og:title" content="Carles Sanz Mateu" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content=" http://www.carlessanzmateu.github.io/" />
-  <meta property="og:image" content="https://carlessanzmateu.github.io/assets/optim-images/header-min.jpg" />
-  <meta property="og:description" content="Carles Sanz Mateu  | Bievenido a mi página personal" />
-  <meta property="og:site_name" content="Carles Sanz Mateu portfolio" />
-  <meta property="article:section" content="Home" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Carles Sanz Mateu" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=" http://www.carlessanzmateu.com/" />
+    <meta property="og:image" content="https://carlessanzmateu.com/assets/optim-images/header-min.jpg" />
+    <meta property="og:description" content="Carles Sanz Mateu  | Bievenido a mi página personal" />
+    <meta property="og:site_name" content="Carles Sanz Mateu portfolio" />
+    <meta property="article:section" content="Home" />
 
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-  <link rel="stylesheet" href="dist/styles.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="scss/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110219621-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
-    gtag('config', 'UA-110219621-1');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110219621-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-110219621-1');
+    </script>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 
-<body ng-app="carlessanzmateuPortfolio">
-  <div ng-view=""></div>
-  <script src="js/vendor/angular.js"></script>
-  <script src="js/vendor/angular-route.js"></script>
+  </head>
 
-  <script src="dist/concat.js"></script>
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Menú</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-  <script src="js/text-hack-animation.js"></script>
-  <script src="js/lib/slide-on-mouseover.js"></script>
-</body>
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-right my-auto">
+        <h1 class="mb-1" id="slide-target">Carles Sanz Mateu</h1>
+        <h3 class="mb-5">
+          <em>Escritor ― Músico ― Programador</em>
+        </h3>
+        <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section about" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Normalmente escribo para ordenadores, pero en mi tiempo libre adoro escribir para soñadores</h2>
+            <!-- <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+              <a href="https://unsplash.com/">Unsplash</a>!</p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <!-- <section class="content-section bg-primary text-white text-center" id="services">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Services</h3>
+          <h2 class="mb-5">What We Offer</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+            <h4>
+              <strong>Responsive</strong>
+            </h4>
+            <p class="text-faded mb-0">Looks great on any screen size!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Redesigned</strong>
+            </h4>
+            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+            <h4>
+              <strong>Favorited</strong>
+            </h4>
+            <p class="text-faded mb-0">Millions of users
+              <i class="fa fa-heart"></i>
+              Start Bootstrap!</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Question</strong>
+            </h4>
+            <p class="text-faded mb-0">I mustache you a question...</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Callout -->
+    <section class="callout">
+      <div class="container text-right">
+        <h2 class="mx-auto mb-5">
+          Conoce un poco más
+          <em>Sobre mí</em></h2>
+        <!-- <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a> -->
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Biografía</h2>
+                  <p class="mb-0">Click aquí para ver mi biografía completa</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/carles.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <p class="highlight bio">
+              Entusiasta de la tecnología, programador, friki y en mis
+            </p>
+            <p class="highlight bio">
+              ratos libres músico y escritor.
+            </p>
+            <p class="highlight bio">
+              Fanático de los mundos de fantasía y de toda la magia
+            </p>
+            <p class="highlight bio">
+              que los envuelve. Admito que en ocasiones también me
+            </p>
+            <p class="highlight bio">
+              gusta perderme por el espacio o dejarme embargar por
+            </p>
+            <p class="highlight bio">
+              el miedo en alguna vieja mansión.
+            </p>
+            <p class="highlight bio">
+              Continúa navegando y averigua más cosas :)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Mis proyectos</h3>
+          <h2 class="mb-5">Conoce lo que hago</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Novelas</h2>
+                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Blog</h2>
+                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Rol</h2>
+                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Otros</h2>
+                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">No te pierdas nada, sígueme en las redes...</h2>
+        <!-- <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a> -->
+      </div>
+    </section>
+
+    <!-- Map -->
+    <!-- <section id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+      <br/>
+      <small>
+        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+      </small>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://medium.com/@csanzmateu/">
+              <i class="fa fa-medium"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/playmaker1509/">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" class="social-link rounded-circle text-white" href="https://twitter.com/carlessanzmateu?lang=es">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Carles Sanz Mateu 2018</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script type="text/javascript" src="js/mouse-over-effect.min.js"></script>
+
+  </body>
+
 </html>

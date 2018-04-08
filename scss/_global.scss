@@ -44,10 +44,10 @@ h6 {
 }
 
 .highlight {
-  background-image: linear-gradient(to right, $secondary 0%, $white 100%);
+  background-image: linear-gradient(to right, rgb(200, 209, 250) 0%, $white 100%);
 
   &:hover {
-    background-image: linear-gradient(to right, rgb(113, 85, 192) 0%, $secondary 20%, $white 100%);
+    background-image: linear-gradient(to right, rgb(187, 198, 248) 0%, rgb(200, 209, 250) 20%, $white 100%);
   }
 }
 

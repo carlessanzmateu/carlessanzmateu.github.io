@@ -40,11 +40,11 @@ h6 {
 }
 
 .highlight {
-  background-image: linear-gradient(to right, #91A6FF 0%, #fff 100%);
+  background-image: linear-gradient(to right, #c8d1fa 0%, #fff 100%);
 }
 
 .highlight:hover {
-  background-image: linear-gradient(to right, #7155c0 0%, #91A6FF 20%, #fff 100%);
+  background-image: linear-gradient(to right, #bbc6f8 0%, #c8d1fa 20%, #fff 100%);
 }
 
 /* Map */
@@ -253,6 +253,18 @@ h6 {
   right: 0;
   margin-bottom: 0;
   position: absolute;
+}
+
+.portfolio-options {
+  font-size: 10rem;
+  display: block;
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  transition: all .45s;
+}
+
+.portfolio-options:hover {
+  color: #fff;
+  background: linear-gradient(to right, #91A6FF 0%, #fff 100%);
 }
 
 .portfolio-item {

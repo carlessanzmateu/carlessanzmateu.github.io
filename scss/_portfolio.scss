@@ -1,3 +1,14 @@
+.portfolio-options {
+  font-size: 10rem;
+  display: block;
+  background: linear-gradient(to right, $white 0%, $white 100%);
+  transition: all .45s;
+  &:hover {
+    color: $white;
+    // background-color: $secondary;
+    background: linear-gradient(to right, $secondary 0%, $white 100%);
+  }
+}
 .portfolio-item {
   display: block;
   position: relative;

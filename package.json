@@ -2,6 +2,7 @@
     "title": "Stylish Portfolio",
     "name": "startbootstrap-stylish-portfolio",
     "version": "4.0.0",
+    "main": "index.html",
     "description": "A stylish portfolio HTML template built with Bootstrap",
     "keywords": [
         "css",

@@ -140,7 +140,7 @@ h6 {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -156,7 +156,7 @@ h6 {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to right, transparent 0%, #91A6FF 100%);
 }
 
 .sidebar-nav li a:active,
@@ -185,7 +185,7 @@ h6 {
 
 #sidebar-wrapper.active {
   right: 250px;
-  width: 250px;
+  width: 50vw;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -330,6 +330,12 @@ h6 {
     background-color: rgba(18, 17, 15, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
+  }
+}
+
+@media (max-width: 425px) {
+  .content-section .portfolio-options {
+    font-size: 5rem;
   }
 }
 

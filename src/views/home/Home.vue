@@ -5,13 +5,12 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Cover from '@/views/home/components/Cover.component.vue'
 
 export default {
-  name: "home",
+  name: 'Home',
   components: {
     Cover
   }
-};
+}
 </script>

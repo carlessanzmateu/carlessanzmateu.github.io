@@ -17,7 +17,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: url('../../../assets/cover.jpg');
   background-position: center center;

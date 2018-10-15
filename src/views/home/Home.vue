@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Cover msg="Welcome to Your Vue.js App"/>
+    <Cover msg="Carles Sanz Mateu"/>
   </div>
 </template>
 
@@ -14,3 +14,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+  height: 100vh;
+}
+</style>

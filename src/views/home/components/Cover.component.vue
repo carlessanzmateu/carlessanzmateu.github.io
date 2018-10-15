@@ -25,11 +25,44 @@ export default {
   background-size: cover;
 }
 
+.title,
+.subtitle {
+  margin-right: 5%;
+}
+
 .title {
   font-size: 4rem;
 }
 
 .subtitle {
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .title,
+  .subtitle {
+    margin-right: 2%;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .title,
+  .subtitle {
+    margin-right: 1%;
+  }
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
 }
 </style>

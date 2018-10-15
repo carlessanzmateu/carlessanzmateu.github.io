@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Cover msg="Carles Sanz Mateu"/>
+    <Cover/>
   </div>
 </template>
 

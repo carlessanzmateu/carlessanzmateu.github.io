@@ -1,30 +1,35 @@
 <template>
   <section class="cover">
-    <h1>{{ msg }}</h1>
+    <h1 class="title">Carles Sanz Mateu</h1>
+    <h3 class="subtitle">Escritor, músico y programador</h3>
   </section>
 </template>
 
 <script>
 export default {
   name: 'Cover',
-  props: {
-    msg: String
-  }
 }
 </script>
 
 <style scoped lang="scss">
 .cover {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   height: 100vh;
   width: 100%;
   background-image: url('../../../assets/cover.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 3rem;
-  text-align: right;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
 }
 </style>

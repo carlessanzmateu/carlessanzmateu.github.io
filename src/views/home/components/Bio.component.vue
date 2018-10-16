@@ -4,7 +4,7 @@
       <div class="image-wrapper"/>
     </div>
     <div class="text-container">
-      <!-- <p>Entusiasta de la tecnología, programador, friki y en mis ratos libres músico y escritor. Fanático de los mundos de fantasía y de toda la magia que los envuelve. Admito que en ocasiones también me gusta perderme por el espacio o dejarme embargar por el miedo en alguna vieja mansión.</p> -->
+      <p>Entusiasta de la tecnología, programador, friki y en mis ratos libres músico y escritor. Fanático de los mundos de fantasía y de toda la magia que los envuelve. Admito que en ocasiones también me gusta perderme por el espacio o dejarme embargar por el miedo en alguna vieja mansión.</p>
     </div>
   </section>
 </template>
@@ -17,17 +17,16 @@ export default {
 
 <style scoped lang="scss">
 .bio {
-  display: flex;
   height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .image-container {
-  flex-grow: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: orange;
+  align-items: center;
 }
 
 .image-wrapper {
@@ -40,8 +39,6 @@ export default {
 }
 
 .text-container {
-  flex-grow: 1;
-  display: flex;
   background-color: purple;
 }
 

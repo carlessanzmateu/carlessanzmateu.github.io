@@ -41,6 +41,7 @@ export default {
 .text-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: left;
 }
 

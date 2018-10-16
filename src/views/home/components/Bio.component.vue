@@ -4,7 +4,7 @@
       <div class="image-wrapper"/>
     </div>
     <div class="text-container">
-      <p>Entusiasta de la tecnología, programador, friki y en mis ratos libres músico y escritor. Fanático de los mundos de fantasía y de toda la magia que los envuelve. Admito que en ocasiones también me gusta perderme por el espacio o dejarme embargar por el miedo en alguna vieja mansión.</p>
+      <p class="text">Entusiasta de la tecnología, programador, friki y en mis ratos libres músico y escritor. Fanático de los mundos de fantasía y de toda la magia que los envuelve. Admito que en ocasiones también me gusta perderme por el espacio o dejarme embargar por el miedo en alguna vieja mansión.</p>
     </div>
   </section>
 </template>
@@ -39,11 +39,23 @@ export default {
 }
 
 .text-container {
-  background-color: purple;
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
 
-// @media (max-width: 768px) {
-// }
+.text {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .bio {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+}
+}
 
 // @media (max-width: 320px) {
 // }

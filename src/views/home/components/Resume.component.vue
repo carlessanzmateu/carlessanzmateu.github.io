@@ -1,7 +1,17 @@
 <template>
   <section class="resume">
-    <ResumeCard class="card"/>
-    <ResumeCard class="card"/>
+    <ResumeCard
+      text="Escritor"
+      class="card"
+      background-image="url('https://cdn-images-1.medium.com/max/1600/1*i8qafJIoxH3MYFB4xKqS1A.jpeg')"/>
+      <ResumeCard
+      text="Programador"
+      class="card"
+      background-image="url('https://cdn-images-1.medium.com/max/2000/1*KOwj7MMEgc1V_9t6EQP2ag.jpeg')"/>
+      <ResumeCard
+      text="Músico"
+      class="card"
+      background-image="url('https://i.pinimg.com/originals/15/d3/0e/15d30e53e4430e21210baf2eec1f9edd.jpg')"/>
   </section>
 </template>
 
@@ -24,7 +34,6 @@ export default {
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
-  background-color: orange;
 }
 
 .card {

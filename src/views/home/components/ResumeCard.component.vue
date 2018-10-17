@@ -32,8 +32,12 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: pointer;
   border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-size: auto;
+  }
 
   &:hover .text {
     background-color: purple;

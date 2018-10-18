@@ -1,8 +1,12 @@
 <template>
   <section
     class="resume-card"
-    :style="{'background-image': backgroundImage}">
-    <h3 class="text">{{text}}</h3>
+    >
+    <div
+      class="resume-card-image"
+      :style="{'background-image': backgroundImage}">
+        <h3 class="text">{{text}}</h3>
+      </div>
   </section>
 </template>
 
@@ -29,19 +33,29 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 3px;
+  overflow: hidden;
   cursor: pointer;
-
-  &:hover {
-    background-size: auto;
-  }
 
   &:hover .text {
     background-color: purple;
     color: white;
+  }
+}
+
+.resume-card-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -51,5 +65,6 @@ export default {
   background-color: orange;
   padding: 0 10px;
   border-radius: 3px;
+  transition: all .5s ease-in-out;
 }
 </style>

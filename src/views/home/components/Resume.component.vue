@@ -1,5 +1,9 @@
 <template>
   <section class="resume">
+    <div class="title">
+      <h3 class="top-text">Mis proyectos</h3>
+      <h5 class="bottom-text">Conoce lo que hago</h5>
+    </div>
     <ResumeCard
       text="Escritor"
       class="card"
@@ -36,7 +40,22 @@ export default {
   padding-top: 30px;
 }
 
-.card {
+.title {
+  width: 80%;
+  text-align: right;
+}
+
+.top-text {
+  color: var(--main-palette-primary);
+  font-size: 1.5rem;
+}
+
+.bottom-text {
+  font-size: 3.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card, .title {
   margin-bottom: 30px;
 }
 </style>

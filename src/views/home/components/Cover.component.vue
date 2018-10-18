@@ -1,5 +1,7 @@
 <template>
   <section class="cover">
+    <h2 class="lights-out">/</h2>
+    <h2 v-if="lightsOutAnimation" class="lights-out text1">Oh my god! Run you fools!</h2>
     <h1 class="title">Carles Sanz Mateu</h1>
     <h3 class="subtitle">Escritor, músico y programador</h3>
   </section>
@@ -7,7 +9,20 @@
 
 <script>
 export default {
-  name: 'Cover'
+  name: 'Cover',
+  data: () => ({
+    start: new Date()
+  }),
+  computed: {
+    lightsOutAnimation() {
+      let fooDate = new Date()
+
+      if (fooDate > this.start + 5000 && fooDate < this.start + 10000) {
+        return truek
+      }
+
+    }
+  }
 }
 </script>
 
@@ -36,6 +51,10 @@ export default {
 
 .subtitle {
   font-size: 1.5rem;
+}
+
+.lights-out.text1 {
+  transform: rotate(-37deg) translateX(-90%) translateY(-806%) scale(2);
 }
 
 @media (max-width: 768px) {

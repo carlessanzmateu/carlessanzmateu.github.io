@@ -38,8 +38,8 @@ export default {
   cursor: pointer;
 
   &:hover .text {
-    background-color: purple;
-    color: white;
+    background-color: var(--main-palette-primary);
+    color: var(--main-palette-base);
   }
 }
 
@@ -62,7 +62,7 @@ export default {
 .text {
   margin: 0;
   font-size: 2rem;
-  background-color: orange;
+  background-color: var(--main-palette-primary-complementary);
   padding: 0 10px;
   border-radius: 3px;
   transition: all .5s ease-in-out;

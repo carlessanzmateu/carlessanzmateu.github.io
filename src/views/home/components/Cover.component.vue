@@ -1,7 +1,7 @@
 <template>
   <section class="cover">
-    <h2 class="lights-out">/</h2>
-    <h2 v-if="lightsOutAnimation" class="lights-out text1">Oh my god! Run you fools!</h2>
+    <!-- <h2 class="lights-out">/</h2>
+    <h2 v-if="lightsOutAnimation" class="lights-out text1">Oh my god! Run you fools!</h2> -->
     <h1 class="title">Carles Sanz Mateu</h1>
     <h3 class="subtitle">Escritor, músico y programador</h3>
   </section>
@@ -9,20 +9,7 @@
 
 <script>
 export default {
-  name: 'Cover',
-  data: () => ({
-    start: new Date()
-  }),
-  computed: {
-    lightsOutAnimation() {
-      let fooDate = new Date()
-
-      if (fooDate > this.start + 5000 && fooDate < this.start + 10000) {
-        return truek
-      }
-
-    }
-  }
+  name: 'Cover'
 }
 </script>
 

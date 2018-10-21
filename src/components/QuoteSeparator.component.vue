@@ -22,7 +22,7 @@ export default {
   align-items: center;
   min-height: 200px;
   width: 100%;
-  text-align: center;
+  justify-content: center;
 }
 
 .quote {

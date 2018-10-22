@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'Footer'
 }
 </script>
 
@@ -44,4 +44,3 @@ export default {
   color: var(--main-palette-base);
 }
 </style>
-

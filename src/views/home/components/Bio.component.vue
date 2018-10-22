@@ -36,6 +36,7 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 290px;
 }
 
 .text-container {
@@ -47,6 +48,7 @@ export default {
 
 .text {
   font-size: 1.5rem;
+  padding: 40px;
 }
 
 @media (max-width: 768px) {
@@ -57,7 +59,4 @@ export default {
   grid-template-columns: 100%;
 }
 }
-
-// @media (max-width: 320px) {
-// }
 </style>

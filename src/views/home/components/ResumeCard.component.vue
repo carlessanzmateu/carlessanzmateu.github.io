@@ -1,7 +1,7 @@
 <template>
   <section
     class="resume-card"
-    >
+    @click="onClick">
     <div
       class="resume-card-image"
       :style="{'background-image': backgroundImage}">
@@ -21,6 +21,11 @@ export default {
     backgroundImage: {
       type: String,
       required: true
+    }
+  },
+  methods: {
+    onClick() {
+      this.$emit('click')
     }
   }
 }

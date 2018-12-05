@@ -8,11 +8,12 @@
       text="Escritor"
       class="card"
       background-image="url('https://cdn-images-1.medium.com/max/1600/1*i8qafJIoxH3MYFB4xKqS1A.jpeg')"/>
-      <ResumeCard
+    <ResumeCard
       text="Programador"
       class="card"
-      background-image="url('https://cdn-images-1.medium.com/max/2000/1*KOwj7MMEgc1V_9t6EQP2ag.jpeg')"/>
-      <ResumeCard
+      background-image="url('https://cdn-images-1.medium.com/max/2000/1*KOwj7MMEgc1V_9t6EQP2ag.jpeg')"
+      @click="goTo('/developer')"/>
+    <ResumeCard
       text="Músico"
       class="card"
       background-image="url('https://i.pinimg.com/originals/15/d3/0e/15d30e53e4430e21210baf2eec1f9edd.jpg')"/>
@@ -26,6 +27,11 @@ export default {
   name: 'Resume',
   components: {
     ResumeCard
+  },
+  methods: {
+    goTo(url) {
+      this.$router.push(url)
+    }
   }
 }
 </script>
@@ -57,5 +63,11 @@ export default {
 
 .card, .title {
   margin-bottom: 30px;
+  text-decoration-line: none;
+}
+
+.link {
+  width: 100%;
+  text-decoration: none;
 }
 </style>

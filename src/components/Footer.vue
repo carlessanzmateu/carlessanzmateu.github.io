@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   display: flex;
-  height: 130px;
+  height: 100px;
   width: 100%;
   background-color: var(--main-palette-base-contrast);
   align-items: center;
@@ -34,7 +34,7 @@ export default {
 
 .fab {
   color: var(--main-palette-base);
-  font-size: 4rem !important;
+  font-size: 3.5rem !important;
   &:hover {
     color: var(--main-palette-primary);
   }

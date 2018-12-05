@@ -29,7 +29,7 @@ export default {
     ResumeCard
   },
   methods: {
-    goTo(url) {
+    goTo (url) {
       this.$router.push(url)
     }
   }

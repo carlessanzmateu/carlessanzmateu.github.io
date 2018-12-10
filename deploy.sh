@@ -1,9 +1,10 @@
 #!/bin/sh
 
-git commit -am "Save uncommited changes (WIP)"
-git branch --delete --force gh-pages
-git checkout --orphan gh-pages
-rm -rf ./dist/node_modules
-git add -f dist
-git commit -m "Rebuild GitHub pages"
-git filter-branch -f --prune-empty --subdirectory-filter dist && git push -f origin gh-pages && git checkout -
+cp CNAME dist/
+cp robots.txt dist/
+cp sitemap.xml dist/
+cp -r .git dist/
+cd dist/
+git add .
+git commit -m "deploying dist in master"
+git push origin master

@@ -59,6 +59,7 @@ export default {
 
 <style scoped lang="scss">
 .skill {
+  height: 101px;
   display: flex;
   flex-direction: column;
 }
@@ -94,7 +95,7 @@ export default {
 }
 
 .expert {
-  background-color: var(--main-palette-fourth);
+  background-color: var(--main-palette-primary);
   color: var(--main-palette-base);
   width: 90%;
 }
@@ -115,7 +116,7 @@ export default {
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: var(--main-palette-primary);
+    background-color: var(--main-palette-fourth);
     
     .level-text {
       color: var(--main-palette-base);

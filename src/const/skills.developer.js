@@ -13,21 +13,6 @@ export const FRONT_END = [
     imageName: 'react.png',
     level: 0,
     clarification: undefined
-  },
-  {
-    imageName: 'javascript.png',
-    level: 2,
-    clarification: 'JS vanilla and ES6'
-  },
-  {
-    imageName: 'css.png',
-    level: 2,
-    clarification: undefined
-  },
-  {
-    imageName: 'html.png',
-    level: 2,
-    clarification: undefined
   }
 ]
 

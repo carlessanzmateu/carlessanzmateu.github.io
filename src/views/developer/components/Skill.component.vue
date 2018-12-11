@@ -64,7 +64,9 @@ export default {
 }
 
 .top-info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 10% 80%;
+  grid-gap: 10%;
 }
 
 .skill-logo {
@@ -105,5 +107,19 @@ export default {
 .basic {
   background-color: var(--main-palette-third);
   width: 35%;
+}
+
+.expert,
+.medium,
+.basic {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--main-palette-primary);
+    
+    .level-text {
+      color: var(--main-palette-base);
+    }
+  }
 }
 </style>

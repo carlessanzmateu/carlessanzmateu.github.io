@@ -58,4 +58,10 @@ strike {
 strong {
   color: var(--main-palette-primary);
 }
+
+@media (max-width: 425px) {
+  .lights-out {
+    transform: rotate(15deg) translateX(120px);
+  }
+}
 </style>

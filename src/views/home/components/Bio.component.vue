@@ -43,7 +43,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 .text {

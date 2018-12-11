@@ -1,5 +1,14 @@
 #!/bin/sh
 
+echo 'removing old master'
+git branch -D master
+
+echo 'create updated master'
+git checkout -b master
+
+echo 'create dist'
+npm run build
+
 echo 'add all SEO files'
 cp CNAME dist/
 cp robots.txt dist/

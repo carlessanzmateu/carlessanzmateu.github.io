@@ -16,6 +16,6 @@ git add .
 git commit -m "deploying dist in master"
 
 echo 'pushing branch'
-git push origin master
+git push origin master --force
 
 echo 'script finished!'

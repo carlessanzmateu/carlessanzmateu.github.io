@@ -23,6 +23,7 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 8px solid var(--main-palette-primary);
 }
 
 .title,

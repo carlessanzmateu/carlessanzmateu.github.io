@@ -20,8 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 .presentation {
-  border-top: 8px solid var(--main-palette-primary);
-  padding: 50px 0;
+  padding-bottom: 20px;
   text-align: justify;
   text-justify: inter-character;
 }
@@ -30,6 +29,10 @@ export default {
   width: 80%;
   margin-left: 10%;
   line-height: 1.5;
+
+  &:first-child::first-letter {
+    font-size: 35px;
+  }
 }
 
 .sign {

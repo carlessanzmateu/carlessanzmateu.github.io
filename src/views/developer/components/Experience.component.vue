@@ -71,6 +71,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 .company {

@@ -117,7 +117,7 @@ export default {
 
   &:hover {
     background-color: var(--main-palette-fourth);
-    
+
     .level-text {
       color: var(--main-palette-base);
     }

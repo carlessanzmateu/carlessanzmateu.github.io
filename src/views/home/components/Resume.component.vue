@@ -7,7 +7,8 @@
     <ResumeCard
       text="Escritor"
       class="card"
-      background-image="url('https://cdn-images-1.medium.com/max/1600/1*i8qafJIoxH3MYFB4xKqS1A.jpeg')"/>
+      background-image="url('https://cdn-images-1.medium.com/max/1600/1*i8qafJIoxH3MYFB4xKqS1A.jpeg')"
+      @click="goTo('/writter')"/>
     <ResumeCard
       text="Programador"
       class="card"
@@ -16,7 +17,8 @@
     <ResumeCard
       text="Músico"
       class="card"
-      background-image="url('https://i.pinimg.com/originals/15/d3/0e/15d30e53e4430e21210baf2eec1f9edd.jpg')"/>
+      background-image="url('https://i.pinimg.com/originals/15/d3/0e/15d30e53e4430e21210baf2eec1f9edd.jpg')"
+      @click="goTo('/musician')"/>
   </section>
 </template>
 

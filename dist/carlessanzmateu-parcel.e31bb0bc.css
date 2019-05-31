@@ -69,6 +69,67 @@
   }
 }
 
+.bio {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.bio .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio .image-wrapper {
+  width: 80%;
+  height: 80%;
+  background-image: url("/carles.381eacd7.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 290px;
+}
+.bio .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-justify: inter-character;
+}
+.bio .text {
+  font-size: 1.5rem;
+  padding: 40px;
+}
+@media (max-width: 768px) {
+  .bio .bio {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+.resume {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.resume .title {
+  width: 80%;
+  text-align: right;
+}
+.resume .top-text {
+  color: var(--main-palette-primary);
+  font-size: 1.5rem;
+}
+.resume .bottom-text {
+  font-size: 3.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
 body {
   height: 100vh;
   margin: 0;

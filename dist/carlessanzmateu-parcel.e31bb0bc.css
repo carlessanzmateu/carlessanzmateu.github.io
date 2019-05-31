@@ -9,52 +9,66 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.title,
-.subtitle {
+.cover .title,
+.cover .subtitle {
   margin-right: 5%;
 }
-
-.title {
+.cover .title {
   font-size: 4rem;
 }
-
-.subtitle {
+.cover .subtitle {
   font-size: 1.5rem;
 }
-
-.lights-out.text1 {
+.cover .lights-out.text1 {
   transform: rotate(-37deg) translateX(-90%) translateY(-806%) scale(2);
 }
-
 @media (max-width: 768px) {
-  .title,
-.subtitle {
+  .cover .title,
+.cover .subtitle {
     margin-right: 2%;
   }
-
-  .title {
+  .cover .title {
     font-size: 2.5rem;
   }
-
-  .subtitle {
+  .cover .subtitle {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 320px) {
-  .title,
-.subtitle {
+  .cover .title,
+.cover .subtitle {
     margin-right: 1%;
   }
-
-  .title {
+  .cover .title {
     font-size: 1.75rem;
   }
-
-  .subtitle {
+  .cover .subtitle {
     font-size: 1rem;
   }
 }
+
+.quote-separator {
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.quote-separator .quote {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .quote-separator .quote {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .quote-separator .quote {
+    font-size: 1rem;
+  }
+}
+
 body {
   height: 100vh;
   margin: 0;

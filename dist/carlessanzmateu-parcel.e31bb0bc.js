@@ -195,17 +195,17 @@ module.hot.accept(reloadCSS);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.main = void 0;
 
 var _main = _interopRequireDefault(require("/src/styles/main.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _default = function _default() {
+var main = function main() {
   console.log(_main.default.main);
 };
 
-exports.default = _default;
+exports.main = main;
 },{"/src/styles/main.scss":"src/styles/main.scss"}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -242,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33925" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43285" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

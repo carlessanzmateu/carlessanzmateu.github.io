@@ -1,5 +1,5 @@
 import classes from '/src/styles/main.scss'
 
-export default () => {
+export const main = () => {
   console.log(classes.main)
 }

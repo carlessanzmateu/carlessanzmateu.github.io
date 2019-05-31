@@ -1,6 +1,79 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title,
+.subtitle {
+  margin-right: 5%;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.lights-out.text1 {
+  transform: rotate(-37deg) translateX(-90%) translateY(-806%) scale(2);
+}
+
+@media (max-width: 768px) {
+  .title,
+.subtitle {
+    margin-right: 2%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .title,
+.subtitle {
+    margin-right: 1%;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
 body {
+  height: 100vh;
   margin: 0;
-  background-color: aqua;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Kurale", serif;
+}
+
+.go-home,
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.lights-out {
+  font-family: "Finger Paint", cursive;
+  color: var(--main-palette-fourth);
 }
 
 /*# sourceMappingURL=/carlessanzmateu-parcel.e31bb0bc.css.map */

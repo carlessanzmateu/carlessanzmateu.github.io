@@ -110,7 +110,7 @@
 }
 
 .resume {
-  height: auto;
+  height: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -128,6 +128,23 @@
 .resume .bottom-text {
   font-size: 3.5rem;
   font-family: "Raleway", sans-serif;
+}
+.resume .content {
+  width: 100%;
+  height: 100%;
+  background-color: purple;
+}
+.resume .content .side-menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: orange;
+  font-size: 45px;
+}
+.resume .content .menu-explanation {
+  width: 100%;
+  height: 100%;
 }
 
 body {

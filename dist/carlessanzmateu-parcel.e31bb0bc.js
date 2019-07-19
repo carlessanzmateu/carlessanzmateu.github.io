@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../.nvm/versions/node/v10.15.3/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../.nvm/versions/node/v10.16.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../.nvm/versions/node/v10.15.3/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../.nvm/versions/node/v10.16.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../.nvm/versions/node/v10.15.3/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/styles/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../.nvm/versions/node/v10.16.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/styles/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/home/carles/training/carlessanzmateu-parcel/src/assets/carles.jpg":[["carles.381eacd7.jpg","src/assets/carles.jpg"],"src/assets/carles.jpg"],"_css_loader":"../../.nvm/versions/node/v10.15.3/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/js/main.js":[function(require,module,exports) {
+},{"/home/carles/training/carlessanzmateu-parcel/src/assets/cover.jpg":[["cover.0031eade.jpg","src/assets/cover.jpg"],"src/assets/cover.jpg"],"/home/carles/training/carlessanzmateu-parcel/src/assets/carles.jpg":[["carles.381eacd7.jpg","src/assets/carles.jpg"],"src/assets/carles.jpg"],"/home/carles/training/carlessanzmateu-parcel/src/assets/resume.jpg":[["resume.1cf3d023.jpg","src/assets/resume.jpg"],"src/assets/resume.jpg"],"_css_loader":"../../.nvm/versions/node/v10.16.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/js/main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -214,7 +214,7 @@ var _main = _interopRequireDefault(require("./src/js/main"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _main.default)();
-},{"./src/js/main":"src/js/main.js"}],"../../.nvm/versions/node/v10.15.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./src/js/main":"src/js/main.js"}],"../../.nvm/versions/node/v10.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -242,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35185" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45179" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -417,5 +417,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../.nvm/versions/node/v10.15.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../.nvm/versions/node/v10.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/carlessanzmateu-parcel.e31bb0bc.js.map

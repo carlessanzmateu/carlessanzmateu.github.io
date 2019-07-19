@@ -1,4 +1,4 @@
-.cover {
+.cover-index {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,45 +9,51 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.cover .title,
-.cover .subtitle {
+.cover-index .title,
+.cover-index .subtitle {
   margin-right: 5%;
 }
-.cover .title {
-  font-size: 4rem;
+.cover-index .title {
+  font-size: 9rem;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url(/cover.0031eade.jpg) no-repeat;
+  background-size: cover;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
 }
-.cover .subtitle {
+.cover-index .subtitle {
   font-size: 1.5rem;
 }
-.cover .lights-out.text1 {
+.cover-index .lights-out.text1 {
   transform: rotate(-37deg) translateX(-90%) translateY(-806%) scale(2);
 }
 @media (max-width: 768px) {
-  .cover .title,
-.cover .subtitle {
+  .cover-index .title,
+.cover-index .subtitle {
     margin-right: 2%;
   }
-  .cover .title {
+  .cover-index .title {
     font-size: 2.5rem;
   }
-  .cover .subtitle {
+  .cover-index .subtitle {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 320px) {
-  .cover .title,
-.cover .subtitle {
+  .cover-index .title,
+.cover-index .subtitle {
     margin-right: 1%;
   }
-  .cover .title {
+  .cover-index .title {
     font-size: 1.75rem;
   }
-  .cover .subtitle {
+  .cover-index .subtitle {
     font-size: 1rem;
   }
 }
 
-.quote-separator {
+.quote-separator-index {
   display: flex;
   align-items: center;
   min-height: 200px;
@@ -55,32 +61,32 @@
   justify-content: center;
   text-align: center;
 }
-.quote-separator .quote {
+.quote-separator-index .quote {
   font-size: 2rem;
 }
 @media (max-width: 768px) {
-  .quote-separator .quote {
+  .quote-separator-index .quote {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 320px) {
-  .quote-separator .quote {
+  .quote-separator-index .quote {
     font-size: 1rem;
   }
 }
 
-.bio {
+.bio-index {
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.bio .image-container {
+.bio-index .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.bio .image-wrapper {
+.bio-index .image-wrapper {
   width: 80%;
   height: 80%;
   background-image: url("/carles.381eacd7.jpg");
@@ -89,19 +95,19 @@
   background-size: cover;
   min-height: 290px;
 }
-.bio .text-container {
+.bio-index .text-container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: justify;
   text-justify: inter-character;
 }
-.bio .text {
-  font-size: 1.5rem;
+.bio-index .text {
+  font-size: 2.5rem;
   padding: 40px;
 }
 @media (max-width: 768px) {
-  .bio .bio {
+  .bio-index .bio {
     height: 100%;
     width: 100%;
     display: grid;
@@ -109,7 +115,7 @@
   }
 }
 
-.resume {
+.resume-index {
   height: 700px;
   width: 100%;
   display: flex;
@@ -117,34 +123,50 @@
   align-items: center;
   padding-top: 30px;
 }
-.resume .title {
+.resume-index .title {
   width: 80%;
   text-align: right;
 }
-.resume .top-text {
+.resume-index .top-text {
   color: var(--main-palette-primary);
   font-size: 1.5rem;
 }
-.resume .bottom-text {
+.resume-index .bottom-text {
   font-size: 3.5rem;
   font-family: "Raleway", sans-serif;
 }
-.resume .content {
+.resume-index .content {
   width: 100%;
   height: 100%;
-  background-color: purple;
 }
-.resume .content .side-menu {
-  width: 100%;
-  height: 100%;
+.resume-index .content .background, .resume-index .content .effect, .resume-index .content .side-menu {
   position: absolute;
-  z-index: 2;
-  background-color: orange;
-  font-size: 45px;
-}
-.resume .content .menu-explanation {
   width: 100%;
   height: 100%;
+}
+.resume-index .content .side-menu {
+  z-index: 2;
+  color: white;
+  width: 50%;
+  height: 100%;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.resume-index .content .side-menu .menu-option {
+  cursor: pointer;
+}
+.resume-index .content .effect {
+  z-index: 1;
+  background-image: linear-gradient(to right, black, 60%, transparent);
+}
+.resume-index .content .background {
+  background-image: url("/resume.1cf3d023.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
